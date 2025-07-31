@@ -1,0 +1,90 @@
+/* === BASIC STRUCTURE === */
+
+*{ margin: 0; /* Removes default margin from all elements */ 
+  padding: 0; /* Removes default padding */ 
+  box-sizing: border-box; /* Includes padding and border in element's total width and height */ }
+
+
+body { font-family: Arial, sans-serif; /* Sets the default font */ 
+  background-color: #f0f0f0; /* Sets background color of the page */ 
+  color: #333; /* Sets default text color */ 
+  line-height: 1.6; /* Sets the space between lines of text */ }
+
+/* === TEXT STYLING === */ 
+h1, h2, h3, h4, h5, h6 { font-weight: bold; /* Makes heading text bold */ 
+  color: #222; /* Sets heading color */ }
+
+p { margin-bottom: 1em; /* Adds space below paragraph */ }
+
+/* === BOX MODEL === */ 
+div { width: 300px; /* Sets fixed width */ 
+  height: 200px; /* Sets fixed height */ 
+  padding: 20px; /* Space inside the box */ 
+  margin: 10px auto; /* Space outside the box and centers horizontally */ 
+  border: 2px solid #000; /* Solid border around the box */ 
+  background-color: #fff; /* Background color inside the box */ }
+
+/* === DISPLAY PROPERTIES === */ 
+.block-element { display: block; /* Makes element take full width */ } 
+.inline-element { display: inline; /* Makes element flow with text */ } 
+.inline-block-element { display: inline-block; /* Like inline but allows setting width and height */ } 
+.hidden { display: none; /* Hides element from page */ 
+  visibility: hidden; /* Hides element but still takes space */ }
+
+/* === POSITIONING === */ 
+.relative-box { 
+  position: relative; /* Position relative to normal flow */ 
+  top: 10px; /* Moves element down */ 
+  left: 20px; /* Moves element right */ }
+.absolute-box { position: absolute; /* Positions relative to nearest positioned ancestor */ top: 50px; left: 100px; } 
+.fixed-box { position: fixed; /* Stays in place even on scroll */ bottom: 0; right: 0; } .sticky-box { position: sticky; /* Sticks to top while scrolling */ top: 0; }
+
+/* === FLEXBOX === */ 
+.flex-container { display: flex; /* Enables flex layout */ justify-content: center; /* Center items horizontally */ align-items: center; /* Center items vertically */ gap: 10px; /* Space between items */ }
+
+/* === GRID === */ 
+.grid-container { display: grid; /* Enables grid layout */ 
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */ 
+  grid-gap: 15px;/* Gap between grid items */ }
+
+/* === COLORS & BACKGROUNDS === */ 
+.colored-box { color: white; /* Text color */ 
+  background-color: navy; /* Background color */ 
+  background-image: url('bg.jpg'); /* Image background */ 
+  background-size: cover; /* Cover full box */ 
+  background-position: center; /* Center the background */ }
+
+/* === BORDERS & RADIUS === */ 
+.rounded-box { border: 2px dashed red; /* Dashed red border */ 
+  border-radius: 10px; /* Rounded corners */ }
+
+/* === SHADOWS === */ 
+.shadow-box { box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+  text-shadow: 1px 1px 3px gray; /* Text shadow */ }
+
+/* === TRANSITIONS & ANIMATIONS === */ 
+.transition-box { transition: all 0.3s ease; /* Smooth change on hover or change */ }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } 
+.animated-box { animation: fadeIn 2s ease-in; /* Fade-in animation */ }
+
+/* === RESPONSIVE === */ 
+@media (max-width: 768px) { .responsive-box { width: 100%; /* Full width on small screens */ } }
+
+/* === Z-INDEX === */ 
+.z-box { position: relative; z-index: 10; /* Controls stacking order */ }
+
+/* === OPACITY === */ 
+.transparent-box { opacity: 0.5; /* 50% transparent */ }
+
+/* === OVERFLOW === */ 
+.scroll-box { overflow: auto; /* Scroll if content is too big */ }
+
+/* === CURSOR === */ 
+.pointer-box { cursor: pointer; /* Changes cursor to pointer on hover */ }
+
+/* === CLIPPING & MASK === */ 
+.clipped-box { clip-path: circle(50%); /* Clips element into a circle shape */ }
+
+
+

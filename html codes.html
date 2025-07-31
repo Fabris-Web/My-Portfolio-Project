@@ -1,0 +1,146 @@
+ <!-- === BASIC STRUCTURE === -->
+<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
+<html lang="en"> <!-- Root element of an HTML page, "lang" specifies the language -->
+<head> <!-- Contains metadata, links, and title -->
+  <meta charset="UTF-8"> <!-- Defines character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive -->
+  <title>My Page</title> <!-- Sets the page title in the browser tab -->
+  
+</head>
+<body> <!-- Main visible content of the webpage -->
+
+<!-- === HEADINGS === -->
+<h1>Main Heading</h1> <!-- Highest level heading -->
+<h2>Sub Heading</h2> <!-- Second level heading -->
+<h3>Smaller Heading</h3> <!-- Third level -->
+<!-- h4, h5, h6 are progressively smaller headings -->
+
+<!-- === PARAGRAPH & TEXT === -->
+<p>This is a paragraph.</p> <!-- Defines a paragraph -->
+<br> <!-- Line break -->
+<hr> <!-- Horizontal line break -->
+
+<!-- === TEXT FORMATTING === -->
+<strong>Bold text</strong> <!-- Important bold text -->
+<em>Italic text</em> <!-- Emphasized (italic) text -->
+<b>Just bold</b> <!-- Bold without emphasis -->
+<i>Just italic</i> <!-- Italic without emphasis -->
+<small>Small text</small> <!-- Smaller font size -->
+<mark>Highlighted text</mark> <!-- Highlighted background -->
+
+<!-- === LINKS & NAVIGATION === -->
+<a href="https://example.com">Visit Example</a> <!-- Hyperlink -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#contact">Contact</a>
+</nav> <!-- Defines a navigation section -->
+
+<!-- === IMAGES === -->
+<img src="image.jpg" alt="Description" width="300"> <!-- Displays an image -->
+
+<!-- === LISTS === -->
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul> <!-- Unordered (bullet) list -->
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+</ol> <!-- Ordered (numbered) list -->
+
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+</dl> <!-- Description list -->
+
+<!-- === TABLE === -->
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th> <!-- Table heading -->
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td> <!-- Table data -->
+      <td>25</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- === FORMS === -->
+<form action="/submit" method="post">
+  <label for="name">Name:</label> <!-- Label for input -->
+  <input type="text" id="name" name="name"> <!-- Single-line text input -->
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"> <!-- Email input -->
+
+  <input type="submit" value="Send"> <!-- Submit button -->
+</form>
+
+<!-- === INPUT TYPES === -->
+<input type="password"> <!-- Password input -->
+<input type="radio" name="gender"> Male <!-- Radio button -->
+<input type="checkbox"> I agree <!-- Checkbox -->
+<select>
+  <option>Option 1</option>
+</select> <!-- Dropdown menu -->
+
+<textarea rows="4" cols="50"></textarea> <!-- Multiline text area -->
+
+<!-- === SEMANTIC HTML5 === -->
+<header>Header content</header> <!-- Top section or logo/navigation -->
+<main>Main content area</main> <!-- Core content of the page -->
+<article>Blog post or news</article> <!-- Independent content -->
+<section>A topic section</section> <!-- Group of related content -->
+<aside>Sidebar content</aside> <!-- Side content or ads -->
+<footer>Footer content</footer> <!-- Bottom of the page -->
+
+<!-- === MULTIMEDIA === -->
+<video controls width="300">
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support video.
+</video> <!-- Embeds video -->
+
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support audio.
+</audio> <!-- Embeds audio -->
+
+<!-- === SCRIPTING & STYLING === -->
+<script>
+  console.log("Hello World");
+</script> <!-- JavaScript code -->
+
+<style>
+  body { background-color: lightblue; }
+</style> <!-- Internal CSS -->
+
+<link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+<script src="script.js"></script> <!-- External JS file -->
+
+<!-- === CONTAINERS === -->
+<div>This is a generic block</div> <!-- Generic block-level container -->
+<span>This is inline</span> <!-- Generic inline container -->
+
+<!-- === OTHER USEFUL TAGS === -->
+<abbr title="World Health Organization">WHO</abbr> <!-- Abbreviation with tooltip -->
+<code>console.log("Hello")</code> <!-- Inline code -->
+<pre>
+  function test() {
+    return true;
+  }
+</pre> <!-- Preserves spacing for blocks of code -->
+
+<iframe src="https://example.com" width="300" height="200"></iframe> <!-- Embeds another web page -->
+
+<!-- === COMMENTS === -->
+<!-- This is a comment in HTML -->
+
+</body>
+</html>
+  
+ 
