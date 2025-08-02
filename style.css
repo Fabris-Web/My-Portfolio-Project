@@ -19,12 +19,26 @@ body{
     color: rgb(255, 81, 0);
 }
 
+#logPageDiv{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
 #profilePic{
     width: 100px;
     border-radius: 50px;
     justify-self: center;
-    box-shadow: 5px 9px 12px grey;
+    box-shadow: 4px 4px 10px grey;
     
+}
+
+#profileDiv{
+    display: grid;
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 81, 0);
 }
 
 #exlusiveDiv{
