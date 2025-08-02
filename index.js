@@ -16,7 +16,7 @@ let age = currentYear - yearOfBirth;
 
 const loginContainerDiv = document.getElementById(`loginContainerDiv`);
 
-const outPutText =`Welcome! ${fullName}, You are logged in with Email address ${email}.;
+const outPutText =`Welcome! ${fullName}, You are logged in with Email address ${email}.`;
 
 
 
