@@ -1,29 +1,105 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-body{
-    background-color: #e0e5ec;
-    margin-bottom: 500px;
+:root{
+    --main-radius: 5px;
+    --main-padding: 5px;
 }
 
-#headerDiv{
-    background-color: #abc2e6;
-    width: 100%;
-    height: 140px;
+#container{
     display: grid;
-    text-align: center;
-    position: fixed;
-    padding-top: 8px;
-    color: rgb(255, 81, 0);
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.5fr 1.1fr 1.2fr 0.8fr;
+grid-template-areas:
+ "navBar navBar navBar navBar"
+ "sideBar main main main"
+ "sideBar content1 content2 content3"
+ "sideBar footer footer footer";
+ grid-gap: 0.2rem;
+ font-family: "inter", sans-serif;
+ font-weight: 800;
+ text-transform: uppercase;
+ font-size: 12px;
+ color: black;
+ text-align: center;
+
 }
+
+#navBar{
+    background-color: rgb(241, 99, 99);
+    grid-area: navBar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#sideBar{
+    background-color: rgb(83, 163, 163);
+    grid-area: sideBar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#main{
+     background-color: rgb(83, 163, 163);
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content1{
+     background-color: rgb(83, 163, 163);
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content2{
+    background-color: rgb(83, 163, 163);
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content3{
+    background-color: rgb(83, 163, 163);
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#footer{
+     background-color: rgb(11, 119, 119);
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+@media only screen and (max-width:700px){
+    #container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr ;
+        grid-template-areas: 
+        "navBar"
+        "sideBar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+}
+
 
 #logPageDiv{
     display: grid;
+    height: 100vh;
     grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.8fr 0.5fr;
     align-items: center;
     justify-items: center;
+    background-color: rgb(83, 163, 163);
 }
 
 #profilePic{
@@ -32,6 +108,7 @@ body{
     justify-self: center;
     box-shadow: 4px 4px 10px grey;
     
+    
 }
 
 #profileDiv{
@@ -39,18 +116,15 @@ body{
     width: 100%;
     text-align: center;
     padding: 10px;
-    color: rgb(255, 81, 0);
-    font-size: 20px;
+    font-family: "inter", sans-serif;
+ font-weight: 800;
+ text-transform: uppercase;
+ font-size: 12px;
+ color: black;
+ text-align: center;
+ background-color: rgb(241, 99, 99);
 }
 
-#exlusiveDiv{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding-top: 150px;
-    align-items: center;
-    width: 100%;
-    
-}
 
 #formDiv{
     display: grid;
@@ -67,10 +141,6 @@ body{
     border: 5px double;
     border-color: #abc2e6;
     box-shadow: 4px 4px 10px grey;
-    
-
-    
-    
     
 }
 
@@ -102,29 +172,20 @@ body{
     white-space-collapse: pre-line;
 }
 
-#otherSectionDiv{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    justify-content: space-between;
-    margin: 10px 0 10px 0;
-}
 
-#aboutMeDiv{
-    background-color:rgb(228, 110, 55) ;
-    margin: 10px 20px 10px 40px;
-   
-}
-
-#mySkillsDiv{
-    background-color: rgb(228, 110, 55);
-    margin: 10px 20px 10px 20px;
-}
-
-#contactsDiv{
+#myPicDiv{
     background-color: rgb(228, 110, 55);
     margin: 10px 40px 10px 20px;
-    
+    padding: 10px;
+     border: 7px double;
+    border-color: #abc2e6;
 }
 
+#fabrisTalkMic{
+    width: 100%;
+}
 
+#fabrisTalkSelf{
+    width: 50%;
+   
+}
