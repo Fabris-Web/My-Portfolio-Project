@@ -14,7 +14,7 @@ body{
 }
 svg{
     width: 50px;
-    color: Blue;
+    background-color: blue;
 }
 #container{
     display: grid;
