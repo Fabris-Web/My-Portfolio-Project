@@ -12,7 +12,9 @@ body{
    /* --main-radius: 5px;*/
     --main-padding: 5px;
 }
-
+svg{
+    width: 30px;
+}
 #container{
     display: grid;
 grid-template-columns: 0.5fr 1fr 1fr 1fr;
