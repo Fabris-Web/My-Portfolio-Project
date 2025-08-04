@@ -9,12 +9,12 @@ body{
 }
 
 :root{
-   /* --main-radius: 5px;*/
+    --main-radius: 5px;
     --main-padding: 5px;
 }
 svg{
     width: 50px;
-    color: blue;
+
 }
 #container{
     display: grid;
