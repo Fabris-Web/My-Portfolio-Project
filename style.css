@@ -13,7 +13,8 @@ body{
     --main-padding: 5px;
 }
 svg{
-    width: 30px;
+    width: 50px;
+    color: Blue;
 }
 #container{
     display: grid;
