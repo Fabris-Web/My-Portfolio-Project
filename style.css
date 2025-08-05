@@ -215,7 +215,9 @@ grid-template-areas:
    
 }
 h3{
-    color: rgb(245, 5, 5) ;
+    color: blue;
+   font-weight: large;
+    font-style: italic;
 }
 p{
     font-size: small;
