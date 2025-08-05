@@ -15,8 +15,13 @@ let currentYear = 2025;
 let age = currentYear - yearOfBirth;
 
 const loginContainerDiv = document.getElementById(`loginContainerDiv`);
-                                                                                
-
+localStorage.setItem("firstName", firstName);  
+const firstName = localStorage.getElement("firstName ");                                                                             
+if (firstName) {
+  document.getElementById("contactsP").textContent = `Hello, ${firstName}!`;
+} else {
+  document.getElementById("contactsP").textContent = "Welcome, guest!";
+}
 const outPutText =`Welcome! ${fullName}, You are logged in with Email address ${email}.`;
 
 loginContainerDiv.textContent = outPutText;
