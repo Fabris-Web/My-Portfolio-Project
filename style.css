@@ -13,10 +13,49 @@ body{
     --main-padding: 5px;
 }
 svg{
-    width: 50px;
+    width: 30px;
     fill: blue;
 
 }
+
+#facebookIcon{
+    width: 20px;
+    fill: white;
+    
+}
+
+#whatsappIcon{
+    width: 20px;
+    fill: green;
+}
+
+#linkedinIcon{
+    width: 20px;
+    fill: rgb(0, 119, 181);
+}
+
+#youtubeIcon{
+    width: 20px;
+    fill: red;
+}
+
+#instagramIcon{
+    width: 20px;
+    fill: rgb(255, 105, 180);
+}
+
+#tiktokIcon{
+    width: 20px;
+    fill: black;
+}
+
+#xIcon{
+    width: 20px;
+    fill: rgb(0, 0, 0);
+}
+
+
+
 #container{
     display: grid;
 grid-template-columns: 0.5fr 1fr 1fr 1fr;
@@ -215,9 +254,11 @@ grid-template-areas:
    
 }
 h3{
-    color: blue;
-   font-weight: large;
+    color: rgb(0, 0, 0);
     font-style: italic;
+    font-size: 20px;
+    text-decoration:underline;
+    
 }
 p{
     font-size: small;
@@ -225,4 +266,11 @@ p{
 a{
     color: black;
     font-style: italic;
+    text-decoration:underline;
+}
+#contactLinksP{
+    
+    text-align: start;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
