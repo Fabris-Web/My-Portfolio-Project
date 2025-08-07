@@ -58,7 +58,7 @@ svg{
 
 #container{
     display: grid;
-grid-template-columns: 0.5fr 1fr 1fr 1fr;
+grid-template-columns: 0.2fr 1fr 0.5fr 0.4fr;
 grid-template-rows: 0.5fr 1.1fr 1.2fr 0.8fr;
 grid-template-areas:
  "navBar navBar navBar navBar"
@@ -102,6 +102,8 @@ grid-template-areas:
 }
 
 #content1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
      background-color: rgb(83, 163, 163);
     grid-area: content1;
     border-radius: var(--main-radius);
@@ -273,4 +275,40 @@ a{
     
     padding-left: 10px;
     padding-bottom: 10px;
+}
+
+#wordIcon{
+    width: 20px;
+
+}
+
+#excelIcon{
+    width: 20px;
+}
+
+#powerpointIcon{
+    width: 20px;
+}
+#visualStudioCodeIcon{
+    width: 20px;
+}
+
+#htmlIcon{
+    width: 20px;
+}
+
+#cssIcon{
+    width: 20px;
+}
+
+#javascriptIcon{
+    width: 20px;
+}
+
+#gitIcon{
+    width: 20px;
+}
+
+#githubIcon{
+    width: 20px;
 }
