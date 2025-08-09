@@ -58,7 +58,7 @@ svg{
 
 #container{
     display: grid;
-grid-template-columns: 0.2fr 1fr 0.5fr 0.4fr;
+grid-template-columns: 0.2fr 1fr 01fr 1fr;
 grid-template-rows: 0.5fr 1.1fr 1.2fr 0.8fr;
 grid-template-areas:
  "navBar navBar navBar navBar"
@@ -103,7 +103,7 @@ grid-template-areas:
 
 #content1{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
      background-color: rgb(83, 163, 163);
     grid-area: content1;
     border-radius: var(--main-radius);
@@ -160,7 +160,7 @@ grid-template-areas:
     height: 100vh;
     width: 100%;
    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 3fr 1px;
+    grid-template-rows: 0.4fr 2fr 3fr 3px;
     align-items: center;
     justify-items: center;
     background-color: rgb(83, 163, 163);
@@ -282,6 +282,10 @@ a{
 
 }
 
+#publisherIcon{
+    width: 20px;
+}
+
 #excelIcon{
     width: 20px;
 }
@@ -311,4 +315,15 @@ a{
 
 #githubIcon{
     width: 20px;
+}
+
+#bufferIcon{
+     width: 20px;
+}
+
+#skillsDiv{
+display: grid;
+grid-template-columns: 1fr 1fr;
+text-align: start;
+padding-left: 20px;
 }
