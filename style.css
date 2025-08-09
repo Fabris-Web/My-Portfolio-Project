@@ -59,7 +59,7 @@ svg{
 #container{
     display: grid;
 grid-template-columns: 0.2fr 1fr 01fr 1fr;
-grid-template-rows: 0.5fr 1.1fr 1.2fr 0.8fr;
+grid-template-rows: 0.5fr 0.5fr 1.2fr 0.8fr;
 grid-template-areas:
  "navBar navBar navBar navBar"
  "sideBar main main main"
@@ -150,6 +150,9 @@ grid-template-areas:
     }
     #sideBar{
         background-color: rgb(83, 163, 163);
+        display: flex;
+        text-align: center;
+        align-content: center;
     
     }
 }
@@ -305,7 +308,7 @@ a{
     width: 20px;
 }
 
-#javascriptIcon{
+#javascriptIcon, #linkedinIcon, #whatsappIcon, #facebookId, #igIcon{
     width: 20px;
 }
 
@@ -314,6 +317,10 @@ a{
 }
 
 #githubIcon{
+    width: 20px;
+}
+
+#capcutIcon{
     width: 20px;
 }
 
