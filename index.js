@@ -6,22 +6,38 @@ const lastName = document.getElementById(`lastName`).value;
 
 const email = document.getElementById(`email`).value;
 
-const yearOfBirth = document.getElementById(`yearOfBirth`).value;
-
 const fullName = `${firstName} ${lastName}`;
- 
-let currentYear = 2025;
-
-let age = currentYear - yearOfBirth;
-
-const loginContainerDiv = document.getElementById(`loginContainerDiv`);
-                                                                                
 
 const outPutText =`Welcome! ${fullName}, You are logged in with Email address ${email}.`;
 
-loginContainerDiv.textContent = outPutText;
-                                                                                
+const loginContainerDiv = document.getElementById(`loginContainerDiv`);
+ 
+const password = document.getElementById(`password`).value;
+const showPassword = document.getElementById(`showPassword`);
 
-document.getElementById("redirectDiv").style.display = "block";
-
+showPassword.addEventListener("change",function() {
+    if (this.checked) {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
 })
+
+
+function validatePassword(password) {
+    const hasLetter = /[a-zA-Z]/.test(password);
+    const hasNumber = /[0-9]/.test(password);
+    const hasSpecialChar = /[!@#$%^&*(),.?/":;{}|<>]/.test(password);
+
+    return hasLetter && hasNumber && hasSpecialChar;
+}
+  
+if(validatePassword(password)){
+loginContainerDiv.textContent = outPutText
+document.getElementById("redirectDiv").style.display = "block";
+}else{
+window.alert(`${firstName}! Kindly,include both numbers, texts and special characters in your password`)
+}  
+})     
+
+

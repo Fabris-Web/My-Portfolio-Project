@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: pink;
+    background-color: #977dff;
     padding: 5px;
 }
 
@@ -58,7 +58,7 @@ svg{
 
 #container{
     display: grid;
-grid-template-columns: 0.2fr 1fr 01fr 1fr;
+grid-template-columns: 0.4fr 1.2fr 0.8fr 1fr;
 grid-template-rows: 0.5fr 0.5fr 1.2fr 0.6fr;
 grid-template-areas:
  "navBar navBar navBar navBar"
@@ -77,7 +77,7 @@ grid-template-areas:
 }
 
 #navBar{
-    background-color: rgb(241, 99, 99);
+    background-color: #0033ff;
     grid-area: navBar;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -88,14 +88,14 @@ grid-template-areas:
 #sideBar{
     display: grid;
     text-align: center;
-    background-color: rgb(83, 163, 163);
+    background-color: #403be7;
     grid-area: sideBar;
     border-radius: var(--main-radius);
     padding-top: 0;
 }
 
 #main{
-     background-color: rgb(83, 163, 163);
+     background-color: #403be7;
     grid-area: main;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -104,28 +104,29 @@ grid-template-areas:
 #content1{
     display: grid;
     grid-template-rows: 0.1fr 1fr;
-     background-color: rgb(83, 163, 163);
+     background-color: #403be7;
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    justify-items: center;
 }
 
 #content2{
-    background-color: rgb(83, 163, 163);
+    background-color: #403be7;
     grid-area: content2;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 #content3{
-    background-color: rgb(243, 182, 192);
+    background-color: #403be7;
     grid-area: content3;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 #footer{
-     background-color: rgb(5, 63, 63);
+     background-color: #0600ab;
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -149,7 +150,7 @@ grid-template-areas:
         font-size: 14px;
     }
     #sideBar{
-        background-color: rgb(83, 163, 163);
+        background-color: #403be7;
         display: flex;
         text-align: center;
         align-content: center;
@@ -166,13 +167,13 @@ grid-template-areas:
     grid-template-rows: 0.4fr 2fr 3fr 3px;
     align-items: center;
     justify-items: center;
-    background-color: rgb(83, 163, 163);
+    background-color: #403be7;
 }
 
 #profileDiv{
     display: grid;
     padding-top: 10px;
-    background-color: rgb(241, 99, 99);
+    background-color: #0033ff;
     width: 100%;
     text-align: center;
 }
@@ -249,13 +250,13 @@ grid-template-areas:
 }
 
 #fabrisTalkMic{
-    height: 10rem;
+    height: 13rem;
     position: relative;
 
 }
 
 #fabrisTalkSelf{
-    height: 150px;
+    height: 14rem;
    
 }
 h3{
@@ -273,6 +274,13 @@ a{
     font-style: italic;
     text-decoration:underline;
 }
+
+a:hover{
+    font-size: 14px;
+    box-shadow: #abc2e6;
+    
+}
+
 #contactLinksP{
     
     
