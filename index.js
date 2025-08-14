@@ -14,14 +14,7 @@ const loginContainerDiv = document.getElementById(`loginContainerDiv`);
  
 const password = document.getElementById(`password`).value;
 const showPassword = document.getElementById(`showPassword`);
-
-showPassword.addEventListener("change",function() {
-    if (this.checked) {
-        password.type = "text";
-    } else {
-        password.type = "password";
-    }
-})
+const passwordField = document.getElementById("password");
 
 
 function validatePassword(password) {
@@ -39,5 +32,15 @@ document.getElementById("redirectDiv").style.display = "block";
 window.alert(`${firstName}! Kindly,include both numbers, texts and special characters in your password`)
 }  
 })     
+
+showPassword.addEventListener("change",function () {
+    if (this.checked) {
+        passwordField.type = `text`;
+    } else {
+        passwordField.type = `password`;
+    }
+})
+
+
 
 
