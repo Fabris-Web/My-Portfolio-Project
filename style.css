@@ -138,22 +138,26 @@ grid-template-areas:
         grid-template-rows: 0.1fr 0.3fr 0.5fr 0.2fr 0.2fr 0.2fr 0.3fr ;
         grid-template-areas: 
         "navBar"
-        "sideBar"
         "main"
         "content1"
         "content2"
         "content3"
+        "sideBar"
         "footer";
     }
    
     #navBar{
         font-size: 14px;
+        
     }
     #sideBar{
+        display: grid;
         background-color: #403be7;
-        display: flex;
-        text-align: center;
-        align-content: center;
+        padding-top: 2px;
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    
     
     }
 }
